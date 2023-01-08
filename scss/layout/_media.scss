@@ -1,0 +1,77 @@
+@media (max-width: 600px) {
+    header {
+        .contenedorLogo {
+            img {
+                width: 5rem;
+                &:hover {
+                    opacity: 75%;
+                    width: 5.5rem;
+                }
+            }
+        }
+        .contenedorBuscador{
+            input {
+                width: 25vw;
+                &:hover {
+                    width: 26vw;
+                    padding: 0.7rem;
+                    opacity: 75%;
+                }
+            }
+        }
+        #contenedorBtnMC{
+            width: 2rem;
+            &:hover {
+                opacity: 75%;
+                width: 2.4rem;
+            }
+            img{
+                width: 2.2rem;
+            }
+        }
+    }
+
+    #fondoModal{
+        margin-top: 5rem;
+        width: 100%;
+        height: 75vh;
+        #headerModal{
+            margin-top: 2rem;
+            h2{
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 1.5rem;
+            }
+            #cerrarModal{
+                position: absolute;
+                font-size: 1.2rem;
+                right: 2rem;
+                padding: 2px;
+            }
+        }
+        #contenedorProductosM{
+            .productoM{
+                img {
+                    width: 6rem;
+                }
+                .contenedorData {
+                    //width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                }
+                .contenedorCerrar{
+                    //width: 30%;
+                    button{
+                    height: fit-content;
+                    padding: 0.3rem .7rem;
+                    font-size: larger;
+                    font-weight: bold;
+                    border: none;
+                    background: none;
+                }
+                }
+            }
+        }
+    }
+}

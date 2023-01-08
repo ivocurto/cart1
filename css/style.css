@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: rgb(219, 26, 26);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+}
+header .contenedorLogo img {
+  margin-left: 2rem;
+  width: 8rem;
+  transition: 500ms;
+}
+header .contenedorLogo img:hover {
+  opacity: 75%;
+  width: 8.5rem;
+}
+header .contenedorBuscador input {
+  width: 35vw;
+  border: none;
+  padding: 0.5rem;
+  transition: 500ms;
+  border-radius: 5px;
+}
+header .contenedorBuscador input:hover {
+  width: 36vw;
+  padding: 0.7rem;
+  opacity: 75%;
+}
+header #contenedorBtnMC {
+  width: 3rem;
+  padding: 1rem;
+  color: white;
+  transition: 500ms;
+}
+header #contenedorBtnMC:hover {
+  opacity: 75%;
+  width: 3.4rem;
+}
+header #contenedorBtnMC img {
+  width: 3rem;
+}
+
+#contenedorBtnMC {
+  margin: 1rem;
+  /*     &:hover {
+          transition: 500ms;
+          margin: 0.8rem;
+      } */
+}
+
+main #acomodadorTitulo {
+  display: flex;
+  justify-content: center;
+}
+main #acomodadorTitulo h1 {
+  margin-top: 2rem;
+}
+main #contenedorProductos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  column-gap: 50px;
+}
+main #contenedorProductos .producto {
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 4px 10px rgb(235, 235, 235);
+  border-radius: 20px;
+  transition: 300ms;
+}
+main #contenedorProductos .producto:hover {
+  transform: scale(1.1);
+}
+main #contenedorProductos .producto h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+main #contenedorProductos .producto img {
+  width: 15rem;
+}
+main #contenedorProductos .producto .productFooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+main #contenedorProductos .producto .productFooter p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+main #contenedorProductos .producto .productFooter button {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  padding: 0.5rem;
+  margin: auto;
+  border: 1px rgb(0, 0, 0) solid;
+  transition: 500ms;
+}
+main #contenedorProductos .producto .productFooter button:hover {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+main #contenedorProductos #fondoModal {
+  margin-top: 5rem;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  top: 0;
+  right: 0;
+  width: 35rem;
+  height: 75vh;
+  box-shadow: 2px 2px 8px black;
+  overflow: auto;
+}
+main #contenedorProductos #fondoModal #headerModal {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+main #contenedorProductos #fondoModal #headerModal h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+main #contenedorProductos #fondoModal #headerModal #cerrarModal {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: none;
+  right: 2rem;
+  padding: 2px;
+  border: none;
+}
+main #contenedorProductos #fondoModal #contenedorProductosM .productoM {
+  border-top: 0.1px solid rgba(175, 175, 175, 0.311);
+  display: flex;
+  flex-direction: row;
+}
+main #contenedorProductos #fondoModal #contenedorProductosM .productoM img {
+  width: 12rem;
+}
+main #contenedorProductos #fondoModal #contenedorProductosM .productoM .contenedorData {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+}
+main #contenedorProductos #fondoModal #contenedorProductosM .productoM .contenedorCerrar {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #contenedorProductos #fondoModal #contenedorProductosM .productoM .contenedorCerrar button {
+  height: fit-content;
+  padding: 0.3rem 0.7rem;
+  font-size: larger;
+  font-weight: bold;
+  border: none;
+  background: none;
+}
+
+@media (max-width: 600px) {
+  header .contenedorLogo img {
+    width: 5rem;
+  }
+  header .contenedorLogo img:hover {
+    opacity: 75%;
+    width: 5.5rem;
+  }
+  header .contenedorBuscador input {
+    width: 25vw;
+  }
+  header .contenedorBuscador input:hover {
+    width: 26vw;
+    padding: 0.7rem;
+    opacity: 75%;
+  }
+  header #contenedorBtnMC {
+    width: 2rem;
+  }
+  header #contenedorBtnMC:hover {
+    opacity: 75%;
+    width: 2.4rem;
+  }
+  header #contenedorBtnMC img {
+    width: 2.2rem;
+  }
+  #fondoModal {
+    margin-top: 5rem;
+    width: 100%;
+    height: 75vh;
+  }
+  #fondoModal #headerModal {
+    margin-top: 2rem;
+  }
+  #fondoModal #headerModal h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  #fondoModal #headerModal #cerrarModal {
+    position: absolute;
+    font-size: 1.2rem;
+    right: 2rem;
+    padding: 2px;
+  }
+  #fondoModal #contenedorProductosM .productoM img {
+    width: 6rem;
+  }
+  #fondoModal #contenedorProductosM .productoM .contenedorData {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  #fondoModal #contenedorProductosM .productoM .contenedorCerrar button {
+    height: fit-content;
+    padding: 0.3rem 0.7rem;
+    font-size: larger;
+    font-weight: bold;
+    border: none;
+    background: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nombre": "Coca-Cola 500 ml",
+        "precio": 274,
+        "imagen": "../img/cocaCola.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Coca-Cola Zero 500 ml",
+        "precio": 274,
+        "imagen": "../img/cocaColaZero.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Coca-Cola Light 500 ml",
+        "precio": 274,
+        "imagen": "../img/cocaColaLight.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Lata Coca-Cola Zero 354 ml",
+        "precio": 394,
+        "imagen": "../img/lataCocaColaZero.jpg"
+    }
+]

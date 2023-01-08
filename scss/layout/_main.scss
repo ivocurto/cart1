@@ -1,0 +1,124 @@
+main {
+#acomodadorTitulo{
+    display: flex;
+    justify-content: center;
+    h1{
+        margin-top: 2rem;
+    }
+}
+#contenedorProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    .producto {
+        width: 17rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 2px 4px 10px rgb(235, 235, 235);
+        border-radius: 20px;
+        transition: 300ms;
+        &:hover{
+            transform: scale(1.10);
+        }
+        h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 1rem;     
+        }
+        img{
+            width: 15rem;
+        }
+        .productFooter{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            p {
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin: 1rem;
+            }
+            button{
+                font-size: 1rem;
+                font-weight: bold;
+                color: white;
+                background-color: red;
+                padding: 0.5rem;
+                margin: auto;
+                border: 1px rgb(0, 0, 0) solid;
+                transition: 500ms;
+                &:hover{
+                    background-color: rgba(255, 0, 0, 0.4);
+                }
+            }
+        }
+    }
+    #fondoModal{
+        margin-top: 5rem;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        display: none;
+        top: 0;
+        right: 0;
+        width: 35rem;
+        height: 75vh;
+        box-shadow: 2px 2px 8px black;
+        overflow: auto;
+
+        #headerModal{
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            h2{
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 1.5rem;
+            }
+            #cerrarModal{
+                position: absolute;
+                font-size: 1.2rem;
+                font-weight: bold;
+                background: none;
+                right: 2rem;
+                padding: 2px;
+                border: none;
+            }
+        }
+        #contenedorProductosM{
+            .productoM{
+                border-top: .1px solid rgba(175, 175, 175, 0.311);
+                display: flex;
+                flex-direction: row;
+                img {
+                    width: 12rem;
+                }
+                .contenedorData {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: left;
+                }
+                .contenedorCerrar{
+                    width: 30%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    button{
+                    height: fit-content;
+                    padding: 0.3rem .7rem;
+                    font-size: larger;
+                    font-weight: bold;
+                    border: none;
+                    background: none;
+                }
+                }
+            }
+        }
+    }
+}
+}
+
